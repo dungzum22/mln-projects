@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
@@ -24,7 +24,7 @@ export default function VeDuAn() {
   const teamMembers = [
     'Nguyễn Phan Trong Tín',
     'Nguyễn Công Trí',
-    'Mac Thanh Tùng',
+    'Trần Ngọc Hiếu',
     'Nguyễn Thành Kinh',
     'Nguyễn Anh Dũng',
   ];
