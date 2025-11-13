@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { BookOpen, Target, TrendingUp, Scale, Users, Globe, ArrowRight, MessageCircle, Sparkles, Zap, Rocket } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 
 export default function Home() {
@@ -199,20 +200,16 @@ export default function Home() {
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
-                  className="glass-effect-strong rounded-3xl p-12 shadow-2xl"
+                  className="glass-effect-strong rounded-3xl p-12 shadow-2xl overflow-hidden"
                 >
                   <div className="relative w-full h-96 flex items-center justify-center">
-                    <Globe className="w-64 h-64 text-purple-400 animate-float" />
-                    {/* Decorative circles */}
-                    <motion.div
-                      animate={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}
-                      transition={{ duration: 8, repeat: Infinity }}
-                      className="absolute top-10 left-10 w-20 h-20 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full opacity-60 blur-xl"
-                    />
-                    <motion.div
-                      animate={{ scale: [1, 1.3, 1], rotate: [360, 180, 0] }}
-                      transition={{ duration: 10, repeat: Infinity }}
-                      className="absolute bottom-10 right-10 w-24 h-24 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full opacity-60 blur-xl"
+                    <Image 
+                      src="/images/unnamed.jpg" 
+                      alt="Việt Nam Trên Đường Toàn Cầu Hóa" 
+                      width={600}
+                      height={400}
+                      className="w-full h-full object-contain rounded-2xl"
+                      priority
                     />
                   </div>
                 </motion.div>
